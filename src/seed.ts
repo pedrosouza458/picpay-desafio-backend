@@ -1,3 +1,4 @@
+import { Role } from "./enums";
 import { prisma } from "./lib/prisma";
 
 async function main() {
@@ -7,7 +8,7 @@ async function main() {
             CPF: "1234.1234.1234.12",
             email: "fulanosilva@gmail.com",
             password: "123456",
-            role: "commom",
+            role: Role.commom,
             wallet: 1500,
         },
     });
@@ -17,7 +18,7 @@ async function main() {
             CPF: "1234.1234.4321.12",
             email: "fulanasilva@gmail.com",
             password: "123456",
-            role: "commom",
+            role: Role.commom,
             wallet: 1500,
         },
     });
@@ -27,7 +28,7 @@ async function main() {
             CPF: "1234.4321.4321.12",
             email: "ciclanosilva@gmail.com",
             password: "123456",
-            role: "commom",
+            role: Role.commom,
             wallet: 1500,
         },
     });
@@ -37,7 +38,7 @@ async function main() {
             CNPJ: "12.345.678/0001-95",
             email: "lanchonete@gmail.com",
             password: "123456",
-            role: "shopkeeper",
+            role: Role.shopkeeper,
             wallet: 5000,
         },
     });
@@ -47,7 +48,7 @@ async function main() {
             CNPJ: "12.543.678/0001-95",
             email: "pizzaria@gmail.com",
             password: "123456",
-            role: "shopkeeper",
+            role: Role.shopkeeper,
             wallet: 5000,
         },
     });
@@ -57,7 +58,7 @@ async function main() {
             CNPJ: "12.345.876/0001-95",
             email: "hamburgeria@gmail.com",
             password: "123456",
-            role: "shopkeeper",
+            role: Role.shopkeeper,
             wallet: 5000,
         },
     });
