@@ -16,7 +16,8 @@ datasource db {
 model user {
   id        Int      @id @default(autoincrement())
   fullName  String   @map("full_name")
-  CPF       String   @unique
+  CPF       String?  @unique
+  CNPJ      String?  @unique
   email     String   @unique
   password  String
   role      String
