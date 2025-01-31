@@ -1,0 +1,22 @@
+{
+  "name": "picpay-desafio-backend",
+  "version": "1.0.0",
+  "description": "Primeiramente, obrigado pelo seu interesse em trabalhar na melhor plataforma de pagamentos do mundo! Abaixo você encontrará todos as informações necessárias para iniciar o seu teste.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.12.0",
+    "prisma": "^6.3.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.3.0",
+    "fastify": "^5.2.1"
+  }
+}
