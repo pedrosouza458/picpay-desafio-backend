@@ -1,5 +1,6 @@
 import Fastify from "fastify";
 import { TransferRequest } from "./types";
+import { prisma } from "./lib/prisma";
 
 const app = Fastify();
 
@@ -9,10 +10,12 @@ app.get("/", (request, reply) => {
     });
 });
 
-app.post("/transfer", (request, reply) => {
-    const { value, payer, payee }: TransferRequest = request.body;
+app.post("/transfer", async (request, reply) => {
+    const { value, payer, payee } = request.body as TransferRequest;
     // TODO find payer id by logged user
-    // TODO find payee by id
+    const findPayee = await prisma.user.findUnique({
+        where: { id: payee },
+    });
 });
 
 app.listen({ port: 3000 }, () => {
