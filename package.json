@@ -4,7 +4,8 @@
   "description": "Primeiramente, obrigado pelo seu interesse em trabalhar na melhor plataforma de pagamentos do mundo! Abaixo você encontrará todos as informações necessárias para iniciar o seu teste.",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx src/server.ts"
+    "dev": "tsx src/server.ts",
+    "seed": "tsx src/seed.ts"
   },
   "keywords": [],
   "author": "",
