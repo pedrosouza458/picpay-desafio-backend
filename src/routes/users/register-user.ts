@@ -17,16 +17,7 @@ export async function RegisterUser(app: FastifyInstance) {
                 wallet,
             },
         });
-        if (!createUser) {
-            return reply.status(400).send({
-                message: "Failed to create user",
-            });
-        }
-        if (createUser.role !== "commom" && createUser.role !== "shopkeeper") {
-            return reply.status(200).send({
-                message: "User should have commom or shopkeeper role",
-            });
-        }
+        
         return reply.status(200).send({
             message: "User created successfully",
         });
